@@ -43,7 +43,7 @@ board.addEventListener("mouseup", function() {
 function getSize(){
     let input = prompt("Size of the board")
     let message = document.querySelector("#message")
-    if(input == "" || input < 16 || input > 64){
+    if(input == "" || input < 16 || input > 64 || isNaN(input)){
         message.textContent = "Please insert a number between 16 and 64"
     } else{
         message.textContent = ""
