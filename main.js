@@ -4,9 +4,12 @@ createBoard(16);
 // this function creates a new board with the sizes indicated by the user. It also use the resetBoard function to clear the board.
 const selectSize = document.querySelector(".btn-select")
 selectSize.addEventListener("click", function(){
+    setTimeout(() => {
     let size = getSize();
     createBoard(size);
     resetBoard();
+    }, 100)
+    
 });
 // This function defines the structure of the grid through CSS properties. NOTE: It doesn't really create the divs!
 function createBoard(size) {
