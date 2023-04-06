@@ -61,7 +61,7 @@ function colorDiv(){
 function setColor(colorChoice){
     color = colorChoice;
 };
-// I use this to erease the board
+// I use this to erease the board.
 function resetBoard(){
     let divs = document.querySelectorAll("div");
     divs.forEach((div) => div.style.backgroundColor = "white");
